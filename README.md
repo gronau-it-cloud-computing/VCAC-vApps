@@ -7,4 +7,6 @@ The 4 files here are an initial upload of scripts that can deploy and configure 
 
 They are free to use. If you can add functionality, please do.
 
+Please note that the script for configuring the VCAC Identity Appliance is not done yet.
+
 mike
