@@ -1,4 +1,12 @@
-﻿
+#Configure-VCAC-App.ps1
+#--------------------------------------------------------------------------
+#19-Sep-2014,MAF,Created by Mike Foley. mike@yelof.com or mfoley@vmware.com
+#--------------------------------------------------------------------------
+#This script is a Powershell wrapper around a script from William Lam for configuring the VCAC Virtual Appliance. 
+#William's script has been updated to support 6.1 of the VCAC App.
+#
+#
+#
 #vCenter
 $DefaultVIServer = "pod02-wdc-vcsa.pml.local"
 $VCuser = "root"
@@ -16,6 +24,7 @@ $VCACVA_config_Script = @"
 # William lam
 # www.virtuallyghetto.com
 # Script to automate the configuration of VCAC VA
+# Updated by Mike Foley for VCAC 6.1 VA 
 
 VCAC_SSO_SERVER=vcacsso61.lab.local
 VCAC_SSO_PASSWORD=VMware1!
@@ -28,6 +37,7 @@ SSL_CERT_COUNTRY=US
 SSL_CERT_STATE=CA
 SSl_CERT_CITY="Palo Alto"
 SSL_CERT_EMAIL=mfoley@vmware.com
+#You'll need to insert your own VCAC key here
 VCAC_LICENSE_KEY=12345678
 
 ### DO NOT EDIT BEYOND HERE ###
