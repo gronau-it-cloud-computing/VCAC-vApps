@@ -6,7 +6,7 @@
 #William's script has been updated to support 6.1 of the VCAC App.
 #
 #
-#
+#--------------------------------------------------------------------------
 #vCenter
 $DefaultVIServer = "pod02-wdc-vcsa.pml.local"
 $VCuser = "root"

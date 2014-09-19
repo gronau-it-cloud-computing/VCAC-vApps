@@ -25,7 +25,7 @@ $VCACVA_config_Script = @"
 # www.virtuallyghetto.com
 # Script to automate the configuration of VCAC VA
 # Updated by Mike Foley for VCAC 6.1 VA 
-
+#--------------------------------------------------------------------------
 VCAC_SSO_SERVER=vcacsso61.lab.local
 VCAC_SSO_PASSWORD=VMware1!
 VCAC_VA_HOSTNAME=vcac-app.lab.local
