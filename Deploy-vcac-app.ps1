@@ -40,3 +40,5 @@ $ovfconfig.vami.VMware_vCAC_Appliance.netmask0.Value = "255.255.255.0"
 # Deploy the OVF/OVA with the config parameters
 Import-VApp -Source $ovffile -OvfConfiguration $ovfconfig -Name $VMName -VMHost $vmhost -Datastore $datastore -DiskStorageFormat thin -Location $cluster
 Move-VM -VM $VMName -Destination $folder
+
+Start-VM -VM $VMName -config:$false -RunAsync
