@@ -28,7 +28,7 @@ $VCAC_config_Script = @"
 
 VCAC_SSO_PASSWORD=VMware1!
 VCAC_SSO_HOSTNAME=vcacsso61.lab.local
-TIMEZONE=PDT
+TIMEZONE="US/Pacific"
 #11-Sep-14,MAF,Differs from Williams script in that on the SSO app you need to supply the list of NTP
 #servers as two separated by a space and quoted values
 NTP_SERVER01="10.144.106.1"
