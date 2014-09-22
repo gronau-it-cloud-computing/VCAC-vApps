@@ -42,4 +42,4 @@ Import-VApp -Source $ovffile -OvfConfiguration $ovfconfig -Name $VMName -VMHost 
 Move-VM -VM $VMName -Destination $folder
 
 
-Start-VM -VM $VMName -config:$false -RunAsync
+Start-VM -VM $VMName -confirm:$false -RunAsync

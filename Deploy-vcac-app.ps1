@@ -41,4 +41,4 @@ $ovfconfig.vami.VMware_vCAC_Appliance.netmask0.Value = "255.255.255.0"
 Import-VApp -Source $ovffile -OvfConfiguration $ovfconfig -Name $VMName -VMHost $vmhost -Datastore $datastore -DiskStorageFormat thin -Location $cluster
 Move-VM -VM $VMName -Destination $folder
 
-Start-VM -VM $VMName -config:$false -RunAsync
+Start-VM -VM $VMName -confirm:$false -RunAsync
